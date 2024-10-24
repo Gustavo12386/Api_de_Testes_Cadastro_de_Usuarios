@@ -3,7 +3,6 @@ package com.api.api_testesunitarios.service.impl;
 import java.util.List;
 import java.util.Optional;
 
-import org.apache.catalina.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,9 +25,9 @@ public class UserServiceImpl implements UserService {
 	private ModelMapper mapper;
 	
 	@Override
-	public Optional<UserModel> findById(Integer id) {
-		Optional<UserModel> obj = repository.findById(id);
-		return Optional.ofNullable(obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado")));
+	public UserModel findById(Integer id) {
+	  Optional<UserModel> obj = repository.findById(id);
+      return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 	}
 	
 	public List<UserModel> findAll(){

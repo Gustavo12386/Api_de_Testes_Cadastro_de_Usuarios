@@ -3,7 +3,7 @@ package com.api.api_testesunitarios.services;
 import java.util.List;
 import java.util.Optional;
 
-import org.apache.catalina.User;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,6 +12,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.modelmapper.ModelMapper;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import com.api.api_testesunitarios.domain.UserModel;
 import com.api.api_testesunitarios.domain.dto.UserDTO;
@@ -20,6 +21,7 @@ import com.api.api_testesunitarios.service.exception.DataIntegratyViolationExcep
 import com.api.api_testesunitarios.service.exception.ObjectNotFoundException;
 import com.api.api_testesunitarios.service.impl.UserServiceImpl;
 
+@SpringBootTest
 public class UserServiceImplTest {
    
 	private static final Integer ID = 1;

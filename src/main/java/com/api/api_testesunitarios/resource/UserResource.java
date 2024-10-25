@@ -2,7 +2,6 @@ package com.api.api_testesunitarios.resource;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.api.api_testesunitarios.domain.UserModel;
 import com.api.api_testesunitarios.domain.dto.UserDTO;
 import com.api.api_testesunitarios.service.UserService;
 

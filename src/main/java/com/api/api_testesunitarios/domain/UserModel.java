@@ -7,10 +7,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @Entity
 @Table(name = "users")
 
@@ -22,9 +20,14 @@ public class UserModel {
 	@Column(unique = true)
 	private String email;
 	@Column(unique = true)
-	private String password;
+	private String password;	
 	
+	public UserModel() {
+		super();		
+	}
+
 	public UserModel(Integer id, String name, String email, String password) {		
+		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;

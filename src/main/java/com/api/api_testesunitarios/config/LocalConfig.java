@@ -19,8 +19,8 @@ public class LocalConfig {
 	
 	@Bean
 	public List<UserModel> startDB() {
-	   UserModel u1 = new UserModel(null, "Gustavo", "calderarogustavo@gmail.com", "123");
-	   UserModel u2 = new UserModel(null, "Luiz", "luiz@email.com", "321");
+	   UserModel u1 = new UserModel(null, "Victor", "victor@gmail.com", "123");
+	   UserModel u2 = new UserModel(null, "Luiz", "luiz@hotmail.com", "321");
 	    
 	  
 	   if (!repository.existsByEmail(u1.getEmail())) {

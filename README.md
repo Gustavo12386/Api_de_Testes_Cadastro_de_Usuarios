@@ -1,4 +1,4 @@
-# Api_de_Testes_Spring_JUnit_Mockito
+# Api_de_Testes_Cadastro_de_Usuarios
 
 ## Sobre a Aplicação 
 - Essa aplicação se trata de uma API que realiza inserção de dados de um determinado usuário, no qual é acompanhada de testes unitários de exceptions, resources e service com as dependências
